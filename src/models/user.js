@@ -4,13 +4,13 @@ const UserSchema = new mongoose.Schema({
     username:{
         type : String,
         required: true,
-        Unique: true,
+        unique: true,
     },
     password: {
         type : String,
         required: true,
     },
-    isMFaActive:{
+    isMfaActive:{
         type:Boolean,
         required : false,
     },
